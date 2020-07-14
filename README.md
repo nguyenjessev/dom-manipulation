@@ -1,2 +1,1 @@
-# dom-manipulation
-Practice exercises from The Odin Project
+This includes DOM manipulation exercises as outlined in The Odin Project
