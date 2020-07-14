@@ -1,5 +1,21 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            .red-text {
+                color: red;
+            }
+
+            .blue-text {
+                color: blue;
+            }
+
+            .my-div {
+                border: 1px solid black;
+                background: hsl(320, 100%, 50%);
+            }
+        </style>
+    </head>
     <body>
         <h1>
             THE TITLE OF YOUR WEBPAGE
@@ -14,6 +30,31 @@
             content.textContent = 'This is the glorious text-content!';
 
             container.appendChild(content);
+
+            const myParagraph = document.createElement('p');
+            myParagraph.classList.add('red-text');
+            myParagraph.textContent = `Hey I'm red!`;
+
+            container.appendChild(myParagraph);
+
+            const myH3 = document.createElement('h3');
+            myH3.classList.add('blue-text');
+            myH3.textContent = `I'm a blue h3!`;
+
+            container.appendChild(myH3);
+
+            const myDiv = document.createElement('div');
+            myDiv.classList.add('my-div');
+            
+            const myChildH1 = document.createElement('h1');
+            myChildH1.textContent = `I'm in a div`;
+            const myChildP = document.createElement('p');
+            myChildP.textContent = 'ME TOO!';
+
+            myDiv.appendChild(myChildH1);
+            myDiv.appendChild(myChildP);
+
+            container.appendChild(myDiv);
         </script>
     </body>
 </html>
