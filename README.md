@@ -2,7 +2,7 @@
 This includes DOM manipulation exercises as outlined in The Odin Project
 
 ## Problems
-I had no problems with this exercise
+I had to use JavaScript to dynamically alter a webpage
 
 ## What I used
 HTML, CSS, JavaSript
